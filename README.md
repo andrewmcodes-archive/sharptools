@@ -2,10 +2,8 @@
 
 [![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 [![License](https://img.shields.io/github/license/andrewmcodes/sharptools.svg)](https://github.com/andrewmcodes/sharptools)
-[![Maintainability](https://img.shields.io/codeclimate/maintainability/andrewmcodes/sharptools.svg)](https://codeclimate.com/github/andrewmcodes/sharptools)
-[![Technical Debt](https://img.shields.io/codeclimate/tech-debt/andrewmcodes/sharptools.svg)](https://codeclimate.com/github/andrewmcodes/sharptools)
-[![Test Coverage](https://img.shields.io/codeclimate/coverage/github/andrewmcodes/sharptools.svg)](https://codeclimate.com/github/andrewmcodes/sharptools)
-[![Test Coverage](https://img.shields.io/codecov/c/github/andrewmcodes/sharptools/master.svg)](https://codecov.io/github/andrewmcodes/sharptools?branch=master)
+[![Maintainability](https://api.codeclimate.com/v1/badges/1e427690381495e02dc5/maintainability)](https://codeclimate.com/github/andrewmcodes/sharptools/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/1e427690381495e02dc5/test_coverage)](https://codeclimate.com/github/andrewmcodes/sharptools/test_coverage)
 [![Ruby Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://github.com/testdouble/standard)
 [![GitHub license](https://img.shields.io/github/license/andrewmcodes/sharptools.svg)](https://github.com/andrewmcodes/sharptools/blob/master/LICENSE)
 
