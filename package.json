@@ -3,15 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "prettier:check": "prettier-standard -- --check \"app/**/*.js\" \"config/**/*.js\" \"app/**/*.scss\"",
-    "prettier:format": "prettier-standard -- \"app/**/*.js\" \"config/**/*.js\" \"app/**/*.scss\"",
-    "prettier:lint": "prettier-standard -- --lint \"app/**/*.js\" \"config/**/*.js\" \"app/**/*.scss\""
+    "prettier:check": "prettier-standard -- --check \"**/*.js\" \"app/**/*.scss\"",
+    "prettier:format": "prettier-standard -- \"**/*.js\" \"app/**/*.scss\"",
+    "prettier:lint": "prettier-standard -- --lint \"**/*.js\" \"app/**/*.scss\""
   },
   "dependencies": {
     "@rails/actioncable": "^6.0.0",
     "@rails/activestorage": "^6.0.0",
     "@rails/ujs": "^6.0.0",
     "@rails/webpacker": "5.1.1",
+    "a17t": "^0.1.4",
     "stimulus": "^1.1.1",
     "tailwindcss": "^1.4.6",
     "turbolinks": "^5.2.0"
