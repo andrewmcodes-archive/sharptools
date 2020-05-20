@@ -1,6 +1,12 @@
 {
   "name": "sharptools",
+  "version": "0.1.0",
   "private": true,
+  "scripts": {
+    "prettier:check": "prettier-standard -- --check \"app/**/*.js\" \"config/**/*.js\" \"app/**/*.scss\"",
+    "prettier:format": "prettier-standard -- \"app/**/*.js\" \"config/**/*.js\" \"app/**/*.scss\"",
+    "prettier:lint": "prettier-standard -- --lint \"app/**/*.js\" \"config/**/*.js\" \"app/**/*.scss\""
+  },
   "dependencies": {
     "@rails/actioncable": "^6.0.0",
     "@rails/activestorage": "^6.0.0",
@@ -9,8 +15,8 @@
     "stimulus": "^1.1.1",
     "turbolinks": "^5.2.0"
   },
-  "version": "0.1.0",
   "devDependencies": {
+    "prettier-standard": "^16.3.0",
     "webpack-dev-server": "^3.11.0"
   }
 }

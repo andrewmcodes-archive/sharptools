@@ -1,0 +1,10 @@
+---
+EnableDefaultLinters: true
+linters:
+  ErbSafety:
+    enabled: false
+  SelfClosingTag:
+    enabled: true
+    enforced_style: 'always'
+  Rubocop:
+    enabled: false
