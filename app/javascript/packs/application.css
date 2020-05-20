@@ -1,3 +1,8 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+@import url('https://css.gg/css?=|pacman');
+
+.gg-pacman {
+  --ggs: 2;
+}
