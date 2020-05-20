@@ -5,7 +5,7 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/1e427690381495e02dc5/maintainability)](https://codeclimate.com/github/andrewmcodes/sharptools/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/1e427690381495e02dc5/test_coverage)](https://codeclimate.com/github/andrewmcodes/sharptools/test_coverage)
 [![Ruby Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://github.com/testdouble/standard)
-[![GitHub license](https://img.shields.io/github/license/andrewmcodes/sharptools.svg)](https://github.com/andrewmcodes/sharptools/blob/master/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/andrewmcodes/sharptools.svg)](https://github.com/andrewmcodes/sharptools/blob/master/LICENSE.md)
 
 Collection of my resources
 
