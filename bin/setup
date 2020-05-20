@@ -17,9 +17,8 @@ FileUtils.chdir APP_ROOT do
   system("bundle check") || system!("bundle install")
 
   puts "\n== Copying example files =="
-  unless File.exist?(".tmuxinator.yml")
-    FileUtils.cp ".tmuxinator.yml.example", ".tmuxinator.yml"
-  end
+  FileUtils.cp ".tmuxinator.yml.example", ".tmuxinator.yml" unless File.exist?(".tmuxinator.yml")
+  FileUtils.cp ".env.example", ".env" unless File.exist?(".env")
 
   puts "\n== Preparing database =="
   system! "bin/rails db:create db:migrate"
