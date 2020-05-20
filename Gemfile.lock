@@ -220,6 +220,8 @@ GEM
       thread_safe (~> 0.1)
     unicode-display_width (1.7.0)
     uniform_notifier (1.13.0)
+    view_component (2.7.0)
+      activesupport (>= 5.0.0, < 7.0)
     web-console (4.0.2)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -265,6 +267,7 @@ DEPENDENCIES
   tmuxinator (~> 2.0, >= 2.0.1)
   turbolinks (~> 5)
   tzinfo-data
+  view_component (~> 2.7)
   web-console (>= 3.3.0)
   webdrivers
   webpacker (~> 5.1.1)

@@ -13,6 +13,7 @@ gem "puma", "~> 4.1"
 gem "rails", "~> 6.0.3", ">= 6.0.3.1"
 # gem "redis", "~> 4.0"
 gem "turbolinks", "~> 5"
+gem "view_component", "~> 2.7"
 gem "webpacker", "~> 5.1.1"
 
 group :development, :test do
