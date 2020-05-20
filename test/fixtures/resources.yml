@@ -1,0 +1,26 @@
+# == Schema Information
+#
+# Table name: resources
+#
+#  id         :bigint           not null, primary key
+#  link       :string
+#  repository :string
+#  title      :string           not null
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#  user_id    :bigint
+#
+# Indexes
+#
+#  index_resources_on_title_and_link_and_repository  (title,link,repository)
+#
+
+one:
+  title: Resource 1
+  link: https://resource_1.sharptools.dev
+  repository: andrewmcodes/sharptools_1
+
+two:
+  title: Resource 2
+  link: https://resource_2.sharptools.dev
+  repository: andrewmcodes/sharptools_2
