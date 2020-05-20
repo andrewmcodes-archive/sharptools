@@ -56,6 +56,8 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
       zeitwerk (~> 2.2, >= 2.2.2)
+    acts-as-taggable-on (6.5.0)
+      activerecord (>= 5.0, < 6.1)
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
     annotate (3.1.1)
@@ -65,7 +67,7 @@ GEM
     backport (1.1.2)
     bcrypt (3.1.13)
     benchmark (0.1.0)
-    better_html (1.0.14)
+    better_html (1.0.15)
       actionview (>= 4.0)
       activesupport (>= 4.0)
       ast (~> 2.0)
@@ -117,14 +119,14 @@ GEM
     ffi (1.12.2)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
+    hightop (0.2.2)
+      activesupport (>= 4.2)
     honeybadger (4.6.0)
     html_tokenizer (0.0.7)
     htmlbeautifier (1.3.1)
     i18n (1.8.2)
       concurrent-ruby (~> 1.0)
     jaro_winkler (1.5.4)
-    jbuilder (2.10.0)
-      activesupport (>= 5.0.0)
     listen (3.2.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
@@ -292,35 +294,36 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  annotate
-  bootsnap (>= 1.4.2)
+  acts-as-taggable-on (~> 6.5)
+  annotate (~> 3.1)
+  bootsnap (~> 1.4, >= 1.4.2)
   brakeman (~> 4.8)
-  bullet
-  byebug
-  capybara (>= 2.15)
+  bullet (~> 6.1)
+  byebug (~> 11.1)
+  capybara (~> 3.32)
   devise (~> 4.7)
-  dotenv-rails
-  erb_lint
+  dotenv-rails (~> 2.7)
+  erb_lint (~> 0.0.32)
+  hightop
   honeybadger (~> 4.6)
-  htmlbeautifier
-  jbuilder (~> 2.7)
+  htmlbeautifier (~> 1.3)
   listen (~> 3.2)
-  pg (>= 0.18, < 2.0)
-  pry-rails
+  pg (~> 1.2, >= 0.18, < 2.0)
+  pry-rails (~> 0.3.9)
   puma (~> 4.1)
-  rails (~> 6.0.3, >= 6.0.3.1)
-  selenium-webdriver
-  solargraph
-  standard
+  rails (~> 6.0, >= 6.0.3.1)
+  selenium-webdriver (~> 3.142)
+  solargraph (~> 0.39.7)
+  standard (~> 0.4.2)
   strong_migrations (~> 0.6.8)
   strong_versions (~> 0.4.4)
   tmuxinator (~> 2.0, >= 2.0.1)
-  turbolinks (~> 5)
+  turbolinks (~> 5.2)
   tzinfo-data
   view_component (~> 2.7)
-  web-console (>= 3.3.0)
-  webdrivers
-  webpacker (~> 5.1.1)
+  web-console (~> 4.0)
+  webdrivers (~> 4.3)
+  webpacker (~> 5.1)
 
 RUBY VERSION
    ruby 2.6.6p146

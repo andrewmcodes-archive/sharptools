@@ -3,45 +3,45 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "2.6.6"
 
-# gem "bcrypt", "~> 3.1.7"
-gem "bootsnap", ">= 1.4.2", require: false
+gem "acts-as-taggable-on", "~> 6.5"
+gem "bootsnap", "~> 1.4", ">= 1.4.2"
 gem "devise", "~> 4.7"
+gem "hightop"
 gem "honeybadger", "~> 4.6"
-# gem "image_processing", "~> 1.2"
-gem "jbuilder", "~> 2.7"
-gem "pg", ">= 0.18", "< 2.0"
+# gem "jbuilder", "~> 2.7"
+gem "pg", "~> 1.2", ">= 0.18", "< 2.0"
 gem "puma", "~> 4.1"
-gem "rails", "~> 6.0.3", ">= 6.0.3.1"
+gem "rails", "~> 6.0", ">= 6.0.3.1"
 # gem "redis", "~> 4.0"
 gem "strong_migrations", "~> 0.6.8"
-gem "turbolinks", "~> 5"
+gem "turbolinks", "~> 5.2"
 gem "view_component", "~> 2.7"
-gem "webpacker", "~> 5.1.1"
+gem "webpacker", "~> 5.1"
 
 group :development, :test do
-  gem "solargraph"
-  gem "dotenv-rails"
-  gem "pry-rails"
-  gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
+  gem "solargraph", "~> 0.39.7"
+  gem "dotenv-rails", "~> 2.7"
+  gem "pry-rails", "~> 0.3.9"
+  gem "byebug", "~> 11.1"
 end
 
 group :development do
-  gem "annotate"
+  gem "annotate", "~> 3.1"
   gem "brakeman", "~> 4.8"
-  gem "bullet"
-  gem "erb_lint"
-  gem "htmlbeautifier"
+  gem "bullet", "~> 6.1"
+  gem "erb_lint", "~> 0.0.32"
+  gem "htmlbeautifier", "~> 1.3"
   gem "listen", "~> 3.2"
-  gem "standard"
+  gem "standard", "~> 0.4.2"
   gem "strong_versions", "~> 0.4.4"
   gem "tmuxinator", "~> 2.0", ">= 2.0.1"
-  gem "web-console", ">= 3.3.0"
+  gem "web-console", "~> 4.0"
 end
 
 group :test do
-  gem "capybara", ">= 2.15"
-  gem "selenium-webdriver"
-  gem "webdrivers"
+  gem "capybara", "~> 3.32"
+  gem "selenium-webdriver", "~> 3.142"
+  gem "webdrivers", "~> 4.3"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
