@@ -242,6 +242,8 @@ GEM
     standard (0.4.2)
       rubocop (~> 0.83.0)
       rubocop-performance (~> 1.5.2)
+    strong_migrations (0.6.8)
+      activerecord (>= 5)
     strong_versions (0.4.4)
       i18n (>= 0.5.0)
       paint (~> 2.0)
@@ -310,6 +312,7 @@ DEPENDENCIES
   selenium-webdriver
   solargraph
   standard
+  strong_migrations (~> 0.6.8)
   strong_versions (~> 0.4.4)
   tmuxinator (~> 2.0, >= 2.0.1)
   turbolinks (~> 5)
