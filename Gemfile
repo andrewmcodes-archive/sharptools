@@ -5,6 +5,7 @@ ruby "2.6.6"
 
 # gem "bcrypt", "~> 3.1.7"
 gem "bootsnap", ">= 1.4.2", require: false
+gem "honeybadger", "~> 4.6"
 # gem "image_processing", "~> 1.2"
 gem "jbuilder", "~> 2.7"
 gem "pg", ">= 0.18", "< 2.0"
@@ -21,6 +22,7 @@ group :development, :test do
 end
 
 group :development do
+  gem "annotate"
   gem "erb_lint"
   gem "listen", "~> 3.2"
   gem "standard"
@@ -36,5 +38,3 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-
-gem "honeybadger", "~> 4.6"
