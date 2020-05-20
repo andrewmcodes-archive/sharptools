@@ -5,6 +5,7 @@ ruby "2.6.6"
 
 # gem "bcrypt", "~> 3.1.7"
 gem "bootsnap", ">= 1.4.2", require: false
+gem "devise", "~> 4.7"
 gem "honeybadger", "~> 4.6"
 # gem "image_processing", "~> 1.2"
 gem "jbuilder", "~> 2.7"
@@ -17,6 +18,7 @@ gem "view_component", "~> 2.7"
 gem "webpacker", "~> 5.1.1"
 
 group :development, :test do
+  gem "solargraph"
   gem "dotenv-rails"
   gem "pry-rails"
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
@@ -26,6 +28,7 @@ group :development do
   gem "annotate"
   gem "bullet"
   gem "erb_lint"
+  gem "htmlbeautifier"
   gem "listen", "~> 3.2"
   gem "standard"
   gem "tmuxinator", "~> 2.0", ">= 2.0.1"
