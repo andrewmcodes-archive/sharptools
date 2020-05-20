@@ -32,6 +32,7 @@ group :development do
   gem "htmlbeautifier"
   gem "listen", "~> 3.2"
   gem "standard"
+  gem "strong_versions", "~> 0.4.4"
   gem "tmuxinator", "~> 2.0", ">= 2.0.1"
   gem "web-console", ">= 3.3.0"
 end
