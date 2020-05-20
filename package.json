@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "prettier:check": "prettier-standard -- --check \"app/**/*.js\" \"config/**/*.js\" \"app/**/*.scss\"",
-    "prettier:format": "prettier-standard -- \"app/**/*.js\" \"config/**/*.js\" \"app/**/*.scss\"",
-    "prettier:lint": "prettier-standard -- --lint \"app/**/*.js\" \"config/**/*.js\" \"app/**/*.scss\""
+    "prettier:check": "prettier-standard -- --check \"**/*.js\" \"app/**/*.scss\"",
+    "prettier:format": "prettier-standard -- \"**/*.js\" \"app/**/*.scss\"",
+    "prettier:lint": "prettier-standard -- --lint \"**/*.js\" \"app/**/*.scss\""
   },
   "dependencies": {
     "@rails/actioncable": "^6.0.0",
