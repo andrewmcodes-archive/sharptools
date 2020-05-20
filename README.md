@@ -7,3 +7,5 @@
 - tmuxinator
 - solargraph
 - yarnclean
+- ~ViewComponent~
+- ~Brakeman~

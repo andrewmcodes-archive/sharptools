@@ -1,6 +1,5 @@
 class WelcomeController < ApplicationController
-  before_action :authenticate_admin!, only: :index
-  # before_filter :authenticate_admin!
+  # before_action :authenticate_admin!, only: :index
 
   def index
   end
