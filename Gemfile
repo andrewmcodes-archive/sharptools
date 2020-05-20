@@ -23,6 +23,7 @@ end
 
 group :development do
   gem "annotate"
+  gem "bullet"
   gem "erb_lint"
   gem "listen", "~> 3.2"
   gem "standard"
