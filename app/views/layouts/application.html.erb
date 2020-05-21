@@ -9,7 +9,13 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body class="bg-blue">
-    <%= yield %>
+  <body class="bg-gray-100">
+    <div class="max-w-screen-lg mx-auto px-6 py-4 md:px-4 md:py-10">
+      <%= render NavbarComponent.new %>
+      <%= render SeparatorComponent.new %>
+      <main aria-label="Content" style="z-index: 1" class="relative">
+        <%= yield %>
+      </main>
+    </div>
   </body>
 </html>

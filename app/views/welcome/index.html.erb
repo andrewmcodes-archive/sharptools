@@ -1,2 +1,60 @@
 <h1>Welcome#index</h1>
 <p>Find me in app/views/welcome/index.html.erb</p>
+<%= render(ChipComponent.new(classes: "mt-4", tone: "positive", priority: "high")) { "Chip" } %>
+<%= render(PortalComponent.new(url: resources_path, classes: "mb-2 mr-2 active", tone: "urge", priority: "low")) { "Resources" } %>
+<%= render(AsideComponent.new(tone: "info")) do %>
+  <strong>Hello world!</strong> This is what an aside looks like.
+<% end %>
+
+<div class="grid-cols-2 gap-4 md:grid">
+  <%= render(CardComponent.new(type: "section", content_only: true)) do %>
+    <h4>~neutral !low</h4>
+    <p>Lorem ipsum dolor sit amet. This is a box. Be careful &mdash; you never know what's inside!</p>
+  <% end %>
+  <%= render(CardComponent.new(type: "section", content_only: true, tone: "positive")) do %>
+    <h4>~positive !low</h4>
+    <p>Lorem ipsum dolor sit amet. This is a box. Be careful &mdash; you never know what's inside!</p>
+  <% end %>
+  <%= render(CardComponent.new(type: "section", content_only: true, tone: "critical")) do %>
+    <h4>~critical !low</h4>
+    <p>Lorem ipsum dolor sit amet. This is a box. Be careful &mdash; you never know what's inside!</p>
+  <% end %>
+  <%= render(CardComponent.new(type: "section", content_only: true, tone: "info")) do %>
+    <h4>~info !low</h4>
+    <p>Lorem ipsum dolor sit amet. This is a box. Be careful &mdash; you never know what's inside!</p>
+  <% end %>
+</div>
+
+<%= render(CardComponent.new(tone: "info", priority: "high")) do %>
+  <strong>Hello world!</strong> This is what a card can look like.
+<% end %>
+
+<%= render(SectionComponent.new(tone: "critical", priority: "high")) do %>
+  Sections aren't meant to be used alone.
+<% end %>
+
+<%= render(CodeComponent.new) { "fuvasldkjasld" } %>
+
+<%= render(ContentComponent.new) do %>
+    <h2>Hello world!</h2>
+  <p>The content element makes sure things like spacing, colors, and sizing
+    look right for the 'classic' HTML content tags.</p>
+  <blockquote>
+    <p>It's very helpful for rendering markdown!</p>
+    <cite>&mdash; Miles McCain</cite>
+  </blockquote>
+<% end %>
+
+<%= render(DropdownComponent.new(label: "Dropdown", options: [1,2,3,4], tone: "info", priority: "high")) %>
+<%= render(HeadingComponent.new(level: 1, tone: "neutral")) { "~neutral" } %>
+<%= render(HeadingComponent.new(level: 1, sub: true, tone: "neutral")) { "~neutral" } %>
+<%= render(HeadingComponent.new(level: 2, tone: "positive")) { "~positive" } %>
+<%= render(HeadingComponent.new(level: 2, sub: true, tone: "positive")) { "~positive" } %>
+<%= render(HeadingComponent.new(tone: "warning")) { "~warning" } %>
+<%= render(HeadingComponent.new(sub: true, tone: "warning")) { "~warning" } %>
+<%= render(HeadingComponent.new(level: 4, tone: "critical")) { "~critical" } %>
+<%= render(HeadingComponent.new(level: 4, sub: true, tone: "critical")) { "~critical" } %>
+<%= render(HeadingComponent.new(level: 5, tone: "info")) { "~info" } %>
+<%= render(HeadingComponent.new(level: 5, sub: true, tone: "info")) { "~info" } %>
+<%= render(HeadingComponent.new(level: 6, tone: "urge")) { "~urge" } %>
+<%= render(HeadingComponent.new(level: 6, sub: true, tone: "urge")) { "~urge" } %>

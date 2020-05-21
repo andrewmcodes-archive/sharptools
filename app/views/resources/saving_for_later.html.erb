@@ -1,8 +1,7 @@
 <p id="notice"><%= notice %></p>
-
-<h1 class="mb-6 text-5xl font-bold text-purple-600 page-name">Resources</h1>
-
-<div class="max-w-full p-4 mb-2 bg-white border rounded-lg">
+<div class="card ~neutral !low p-0">
+  <div class="p-4">
+    <h1 class="heading mb-4">Resources</h1>
   <%= render(TableComponent.new) do |component| %>
     <% component.with(:thead) do %>
       <tr>
@@ -15,11 +14,9 @@
     <% component.with(:tbody) do %>
       <% @resources.each do |resource| %>
         <tr>
-          <td>
-            <strong><%= resource.title %></strong>
-          </td>
-          <td><%= link_to resource.link, resource.link, class: "underline" %></td>
-          <td><%= link_to resource.repository, resource.repository, class: "underline" %></td>
+          <td><%= resource.title %></td>
+          <td><%= resource.link %></td>
+          <td><%= resource.repository %></td>
           <td><%= link_to 'Show', resource %></td>
           <td><%= link_to 'Edit', edit_resource_path(resource) %></td>
           <td><%= link_to 'Destroy', resource, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -27,7 +24,8 @@
       <% end %>
     <% end %>
   <% end %>
-</div>
-  <section class="mt-4 section">
-    <%= link_to 'New Resource', new_resource_path, class: "button ~neutral !high" %>
+  </div>
+  <section class="section ~neutral p-4">
+    <%= link_to 'New Resource', new_resource_path, class: "button ~info !high" %>
   </section>
+</div>
