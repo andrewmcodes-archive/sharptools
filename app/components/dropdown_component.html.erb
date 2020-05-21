@@ -1,0 +1,11 @@
+<span class='dropdown' tabindex='0'>
+  <%= content_tag("span", class: classes) do %>
+    <span><%= label %></span>
+    <span class='ml-3 chev'></span>
+  <% end %>
+  <div class='dropdown-display'>
+    <% options.each do |option| %>
+      <div class='card ~neutral !high py-4 w-48'><%= option %></div>
+    <% end %>
+  </div>
+</span>

@@ -1,22 +1,22 @@
 <div style="z-index: 2;" class="relative">
-  <header class="flex items-center flex-wrap justify-between" style="z-index: 1;">
+  <header class="flex flex-wrap items-center justify-between" style="z-index: 1;">
     <div class="mr-6">
       <h3 class="text-2xl ~urge !low"><a href="/" class="flex items-center">
-          <div class="icon mr-2">
+          <div class="mr-2 icon">
             <i class="gg-pacman"></i>
           </div>
-          <div class="label text-gray-800 text-2xl">SharpTools</div>
+          <div class="text-2xl text-gray-800 label">SharpTools</div>
         </a></h3>
     </div>
     <div class="block md:hidden">
       <button class="flex items-center px-3 py-2 text-gray-700 hover:text-gray-900" onclick="document.querySelector('#navFullContent').classList.toggle('hidden')">
-        <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+        <svg class="w-3 h-3 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
           <title>Menu</title>
           <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
         </svg>
       </button>
     </div>
-    <div class="block flex-wrap md:flex md:items-center md:justify-between flex-grow shadow-lg bg-gray-200 py-4 px-2 rounded-lg hidden md:bg-transparent md:shadow-none md:p-0" id="navFullContent">
+    <div class="flex-wrap flex-grow hidden block px-2 py-4 bg-gray-200 rounded-lg shadow-lg md:flex md:items-center md:justify-between md:bg-transparent md:shadow-none md:p-0" id="navFullContent">
       <ul>
         <li tabindex="0" class="portal outline-none ~urge active">
           <a href="#">Resources</a>
@@ -25,7 +25,7 @@
           <a href="#">Tags</a>
         </li>
       </ul>
-      <div class="md:w-5/12 md:text-right md:p-0 p-2 portal flex items-center md:justify-end" style="z-index: 0;">
+      <div class="flex items-center p-2 md:w-5/12 md:text-right md:p-0 portal md:justify-end" style="z-index: 0;">
         <span class="algolia-autocomplete" style="position: relative; display: inline-block; direction: ltr;"><input class="input ~neutral !low ds-input" type="text" placeholder="Search..." id="search" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-label="search input" aria-owns="algolia-autocomplete-listbox-0" dir="auto" style="position: relative; vertical-align: top;">
           <pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, &quot;Noto Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;; font-size: 16px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-variant-east-asian: normal; font-variant-position: normal; font-weight: normal; word-spacing: 0px; letter-spacing: normal; text-indent: 0px; text-rendering: optimizeLegibility; text-transform: none;"></pre>
           <span class="ds-dropdown-menu" role="listbox" id="algolia-autocomplete-listbox-0" style="position: absolute; top: 100%; z-index: 100; display: none; left: 0px; right: auto;">
